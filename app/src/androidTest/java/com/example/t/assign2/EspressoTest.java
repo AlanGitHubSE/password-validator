@@ -21,6 +21,7 @@ public class EspressoTest {
     @Rule
     public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule(MainActivity.class);
 
+
     @Test
     public void CheckExistInput(){
         Espresso.onView(withId(R.id.password_Field)).check(matches(isDisplayed()));
